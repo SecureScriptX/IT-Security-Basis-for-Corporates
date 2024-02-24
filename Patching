@@ -1,0 +1,13 @@
+# Patching
+
+Swiftly deploy patches to your software and firmware, and enable automatic updates whenever feasible.
+
+## SLA for Patching According to CVE
+
+**What is SLA?**
+
+A service-level agreement (SLA) is a contract between a service provider and its customers that documents the services the provider will deliver and outlines the service standards the provider is committed to meeting.
+
+*Source: techtarget.com*
+
+Have you established a maximum update time for your workstations/servers/software? If yes, do you consider criteria such as the CVSS (Common Vulnerability Scoring System) score, whether the server to be patched is Internet-facing or not, and whether the vulnerability is known to be actively exploited (0-day)?
