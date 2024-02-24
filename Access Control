@@ -1,0 +1,18 @@
+
+# Access Control
+
+Implement policies, processes, and technologies to ensure that only authorized users are granted the minimum necessary privileges. There's no one-size-fits-all solution; adaptation is key, so we want to take it step by step.
+
+## Password & MFA
+
+Initiate protection at the basic level by implementing a password policy within your environment. In a Windows environment, this policy should be configured in the "Default Domain Policy" to cover all computers.
+
+Whenever feasible, enhance security beyond password authentication using robust methods such as biometrics, one-time passwords, and application tokens. Multi-factor authentication (MFA), whether through SMS or application authenticator, is strongly recommended. Start with privileged users and progressively extend it to all users.
+
+## Zero Trust
+
+Identify and deactivate unused accounts, eliminate shared accounts, revoke unnecessary privileges, and enforce robust password policies.
+
+## Audit of Account Usage
+
+Regularly monitor and analyze user activity for unusual behavior, such as access attempts outside normal business hours or from unfamiliar locations. Aim to maintain less than 15% of accounts with "domain administrator" privileges in the fleet.
