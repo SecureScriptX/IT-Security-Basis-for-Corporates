@@ -1,0 +1,47 @@
+
+# Backups
+
+Backups serve as the final line of defense against threats like Ransomware, although they are not a direct preventive measure. A non-operational backup system post-attack could pose a significant risk to your business survival.
+
+## Rule 3-2-1
+
+A fundamental guideline and the minimum expectation for infrastructure, the 3-2-1 rule dictates the following:
+
+- Maintain at least three copies of your data.
+- Store these copies on two different media.
+- Have one offsite external backup.
+
+### Three Copies
+
+The principle is to have your data on the server and two additional backups to avoid operational failures jeopardizing your backup integrity.
+
+### Two Different Media
+
+Interpret "two different media" not strictly as different physical formats (e.g., hard disk and LTO tape) but as having backups on two distinct, unrelated points. For instance, having two copies on hard disks is acceptable if stored in different data centers, not linked via the same software RAID (Redundant Array of Inexpensive Disks), etc.
+
+### One Offsite External Backup
+
+This requirement ensures a backup is stored outside your building, safeguarding main data against risks like fire.
+
+## Rule 3-2-1-1-0
+
+This rule, applicable at least to critical resources, extends the 3-2-1 rule with two additional conditions:
+
+- Maintain 1 offline copy.
+- Ensure 0 errors during the restoration process.
+
+### One Offline Copy
+
+This involves having a backup disconnected from your network and any IT infrastructure to prevent intervention by an attacker who has compromised your network.
+
+### Zero Errors During The Restoration
+
+While seemingly obvious, it is crucial to regularly test backups and verify they can be restored without errors. Discovering a damaged file on the database server post-restoration would be unfortunate.
+
+## Minimum Storage Time
+
+Backups should facilitate the restoration of data at least 30 days old. This timeframe aligns with the average time between a security breach and its detection by the company.
+
+## Backup Tests
+
+Now that your data is backed up following best practices, it is imperative to track test restores systematically. Each server should undergo restoration at least once a year to ensure the effectiveness of the backup strategy.
