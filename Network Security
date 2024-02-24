@@ -1,0 +1,37 @@
+
+# Network
+
+Regularly monitor both incoming and outgoing Internet traffic within your organization.
+
+## PCAP
+
+Leverage the SPAN ports of your network equipment to capture network activities. This capture enables the detection of abnormal behavior (e.g., increased use of a protocol, unusual destination addresses) and facilitates post-mortem analysis in case of compromise.
+
+A SPAN (Switched Port Analyzer) port, also known as a mirror port, is a feature found on network switches that allows the monitoring of network traffic. It enables the switch to copy or mirror traffic from one or more ports to another port designated for analysis. This feature is commonly used for network troubleshooting, traffic analysis, and security monitoring.
+
+When a SPAN port is configured, it copies the traffic from specified source ports (or the entire VLAN) to a destination port where a network analyzer or monitoring device is connected. This monitoring device can then analyze the network traffic without affecting the normal operation of the network.
+
+SPAN ports are particularly useful for tasks such as intrusion detection, network performance monitoring, and capturing packets for analysis. They provide network administrators with valuable insights into the traffic flowing through their network, helping them identify issues, detect anomalies, and ensure the overall security and performance of the network.
+
+## Segmentation
+
+Implement segmentation to divide your computer network into smaller, more secure parts. This not only enhances network performance but also improves security by minimizing the attack surface and restricting the scope of potential attacks. Technologies like VLANs and PVLANs can effectively separate different networks.
+
+- Ensure that administration interfaces of your network equipment are not accessible from standard user stations.
+- Confirm that remote office services are exclusively available on a dedicated network.
+
+There are two types of PVLANs:
+
+    Isolated PVLAN: Devices within the same isolated PVLAN cannot communicate with each other but can communicate with devices in the primary VLAN.
+
+    Community PVLAN: Devices within the same community PVLAN can communicate with each other and with devices in the primary VLAN. Communication between devices in different community PVLANs is restricted.
+
+PVLANs provide an additional layer of network segmentation and security, allowing for more granular control over communication between devices within a VLAN.
+
+## Review of Blocked Flows
+
+With your corporate network segmented and flows restricted, initiate a review process to pinpoint the origin of requests blocked by your new policy. This could include identifying compromised workstations or applications that were not initially inventoried.
+
+## Alert Outside of Standard Use
+
+Upon implementing these measures, generate alerts for abnormal network usage. Beyond the security benefits, these alerts can help identify vulnerabilities within your organization, such as instances where backup tools saturate the network.
