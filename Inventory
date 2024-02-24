@@ -1,0 +1,46 @@
+
+# Inventory
+
+Protecting your infrastructure requires understanding the devices connected to your network, the applications in use, user access permissions, and implemented security measures.
+
+### What should your inventory contain and why?
+
+As with all IT security concerns, maintaining a comprehensive inventory is essential. The inventory should include, at a minimum, the following information:
+
+- Hardware details of each workstation and server
+- Installed software with exact versions
+- Date of the last report
+
+# End-of-Life Equipment
+
+Utilizing your inventory, identify equipment (both hardware and software) that has reached the end of its support. Unsupported equipment poses a security risk as it will no longer receive necessary patches. Exclude such equipment from your network. In extreme cases, a Chief Information Security Officer (CISO) may perform a risk acceptance, which should be documented in the inventory. Regular reviews of this analysis are recommended, preferably with each new vulnerability discovery.
+
+# Secure Boot
+
+Ensure that secure boot is enabled on all compatible devices. This feature ensures that the computer only boots using manufacturer-approved software. With a decade of availability, standard usage should minimize any potential issues.
+
+# Softwares List
+
+To reduce the attack surface, establish a strict policy regarding authorized and unauthorized software within your company.
+
+### Allowed Softwares
+
+Utilize Group Policy Objects (GPO) or Intune to provide users with a readily available software library without requiring administrative rights. This helps prevent users from downloading installation programs independently, reducing the risk of downloading malicious software.
+
+### Forbidden Softwares
+
+Whether through Intune or AppLocker, block software identified as forbidden (either due to lack of legitimization or exposure to a dangerous Common Vulnerabilities and Exposures [CVE] version). Any use of prohibited applications should be reported to the IT team.
+
+# Security Hardening
+
+Ensure your company follows proven hardening guides to configure devices. These guidelines may include:
+
+- Station handover procedures with a prerequisite checklist
+- Auditing the secure configuration of devices
+- Alerts for configuration modifications
+
+Implement hardening through tools like Ansible, GPO, or Intune.
+
+# Antivirus / EDR
+
+Deploy antivirus, and preferably Endpoint Detection and Response (EDR), across your entire fleet, starting with critical business devices. Establish a monitoring system for generated alerts.
