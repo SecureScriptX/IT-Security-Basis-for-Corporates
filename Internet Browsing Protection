@@ -1,0 +1,12 @@
+
+# Internet Browsing Protection
+
+Filter connections to unauthorized websites, suspicious domain names, and known malicious domains to enhance internet security.
+
+## DNS Filtering
+
+Utilize firewalls to block access to dangerous sites and filter out unwanted content. While categories like "+18 adult content" are commonly blocked, it's crucial to include URL shorteners, a service frequently exploited for phishing attempts. After configuring blocking settings, monitoring the attempted visits to blocked sites by any employees is essential.
+
+## Centralized Management of Browsers
+
+Enhance security by centrally managing browser settings. Updating these settings can increase resistance against malware installations. For instance, consider restricting the installation of plugins or disabling the automatic execution of specific types of content.
